@@ -1,9 +1,7 @@
-# MicMemo Pro: copy recordings by USB
+# zipel.github.io
 
-The page at <https://zipel.github.io/usb> turns MicMemo Pro's storage file, copied from a Garmin watch over USB,
-into audio files. It runs entirely in the browser: nothing is uploaded.
+Pages for zipel's Garmin Connect IQ apps, served by GitHub Pages at https://zipel.github.io/.
 
-The privacy notice is at <https://zipel.github.io/usb/privacy>.
-
-The source lives in the MicMemo Pro repo (`server/public/usb.html`, `extract.js` and `privacy.html`). This repo only
-publishes a copy, with `usb.html` saved as `index.html`.
+Each app has its own folder, such as `micmemopro/privacy.html` (https://zipel.github.io/micmemopro/privacy). To add
+an app, add its folder and a line in `index.html`. Each app's notice is kept in that app's own repository and copied
+here.
