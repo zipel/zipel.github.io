@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sauna Loop: privacy notice</title>
+<style>
+  :root { color-scheme: light dark; --bg: #f6f6f4; --text: #1c1c1a; --muted: #63635e; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #161615; --text: #f1f1ee; --muted: #a9a9a2; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.6rem; margin: 0 0 8px; }
+  h2 { font-size: 1.1rem; margin: 24px 0 8px; }
+  p, ul { margin: 0 0 16px; }
+  .date { color: var(--muted); }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<!-- Source of https://zipel.github.io/saunaloop/privacy (repo zipel/zipel.github.io). Change both together. -->
+<main>
+  <h1>Sauna Loop privacy notice</h1>
+  <p class="date">Last updated November 20, 2026.</p>
+
+  <h2>Short version</h2>
+  <p>We don't run a server, and the app sends us nothing: not your sessions, not your heart rate, nor anything else about you. The app has no account of ours, no ads and no analytics. Your session history and settings stay on your watch. Two things leave it: each session you save, which your watch syncs to Garmin Connect like any other activity, and the trial and purchase check with KiezelPay. Both are described below.</p>
+
+  <h2>On the watch</h2>
+  <p>The app keeps your settings and your last 50 saved sessions in its storage on your watch. For each session it keeps the start time, the length, the number of rounds, the time in the heat and cooling down, your average and maximum heart rate, and the calories. Older sessions are dropped as new ones come in. It also keeps the state of the trial and the purchase (see below). Timing, alerts and the history work with no phone and no internet. Deleting the app removes all of this from the watch.</p>
+
+  <h2>Heart rate and other readings</h2>
+  <p>During a session the app reads your heart rate, to show it, to warn you if it passes the limit you set, and to save the average and maximum with the session. It also shows the latest stress, Body Battery, breathing rate and watch temperature your watch has measured, and warns you if the watch gets too hot. It doesn't store these readings or add them to the activity.</p>
+  <p>The app doesn't ask for the location (Positioning) permission, so it can't turn GPS on and never learns where you are.</p>
+  <p>The readings are for your information only, not for medical use.</p>
+
+  <h2>The activity in Garmin Connect</h2>
+  <p>When you save a session, your watch saves it as an activity and syncs it to Garmin Connect, as it does with any activity. It holds what the watch records for any activity, such as the time, your heart rate and calories (some watches add breathing rate and stress), plus Sauna Loop's own data: whether you were in the heat or cooling down each second, the phase of each lap, and the number of rounds, heat time and cool-down time. It holds no location. Garmin's privacy policy covers it there, and your Garmin Connect settings decide whether it goes on to other apps you have connected, as for any activity. Sauna Loop itself sends it nowhere. If you discard a session, neither the watch nor the app keeps it.</p>
+
+  <h2>Settings on your phone</h2>
+  <p>You can also change the settings in Garmin Connect on your phone. They go between your phone and your watch through Garmin's apps, as for any Connect IQ app, and never reach us.</p>
+
+  <h2>The trial and buying Sauna Loop</h2>
+  <p>Sauna Loop is free to try, then unlocked with a purchase handled by <a href="https://kiezelpay.com/">KiezelPay</a>. To start the trial, show a purchase code and check whether the app is unlocked, the app asks KiezelPay's server, through the Garmin Connect app on your phone. It does this when it first starts, after the trial is over, while you are buying it, and now and then after a purchase. Each check sends:</p>
+  <ul>
+    <li>an identifier your watch gives Sauna Loop. Each app gets a different one, and it stays the same if you reinstall the app. On a watch that has none, the app sends a random number it makes once instead.</li>
+    <li>your watch's model number (its Garmin part number)</li>
+    <li>Sauna Loop's id at KiezelPay, that it is a Garmin app, and the version of KiezelPay's code in the app</li>
+    <li>whether the app has a trial and whether it is a test version</li>
+    <li>the current time, so the answer is always fresh</li>
+  </ul>
+  <p>As with any website, KiezelPay also sees your phone's internet (IP) address. KiezelPay keeps a record of the identifier with your trial and any purchase. Nothing else goes to KiezelPay: not your sessions, your heart rate or your settings. The check is the only reason the app asks for the internet (Communications) permission.</p>
+  <p>You pay on KiezelPay's website. Your payment details and email address go to KiezelPay and its payment providers, and KiezelPay's own privacy policy covers them.</p>
+
+  <h2>Contact</h2>
+  <p>Questions: <a href="mailto:xamos@mail.com">xamos@mail.com</a></p>
+</main>
+</body>
+</html>
